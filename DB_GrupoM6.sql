@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS GrupoM6;
+CREATE DATABASE GrupoM6;
+USE GrupoM6;
+CREATE TABLE Contrasenas(Id INTEGER PRIMARY KEY NOT NULL, contraseña TEXT NOT NULL);
+INSERT INTO Contrasenas VALUES (1,'manolo123');
+INSERT INTO Contrasenas VALUES (2,'lsa23on');
+INSERT INTO Contrasenas VALUES (3,'19320332');
+INSERT INTO Contrasenas VALUES (4,'mimara');
+INSERT INTO Contrasenas VALUES (5,'jacky7');
+
