@@ -28,9 +28,9 @@ int main(int argc, char **argv)
 		printf("Error al crear la BD: %u %s\n",mysql_errno(conn),mysql_error(conn));
 		exit(1);
 	}
-	printf("Dame la ID de un jugador para buscar su contraseña\n");
+	printf("Dame la ID de un jugador para buscar su contraseÃ±a\n");
 	scanf("%d",&Id);
-	sprintf(consulta,"SELECT contrasena FROM Constrasenas WHERE Id = %d;", Id);
+	sprintf(consulta,"SELECT contrasena FROM Contrasenas WHERE Id = %d;", Id);
 	err = mysql_query(conn,consulta);
 	if(err!=0){
 		printf("Error al consultar datos %u %s\n",mysql_errno(conn),mysql_error(conn));
@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 	if (row == NULL)
 		printf("No se han obtenido datos de la consulta");
 	else
-		printf("Contraseña: %s\n",row[0]);
+		printf("ContraseÃ±a: %s\n",row[0]);
 	
 	mysql_close(conn);
 	exit(0);
